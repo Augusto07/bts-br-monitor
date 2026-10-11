@@ -60,13 +60,13 @@ def main():
             send_email(
                 recipient=recipient,
                 subject="BTS LIBERO BRASIL CORREEEEEEEE",
-                body=f"Brazilian show found!\n\n{SHOWS_URL}"
+                body=f"Brazilian popup found!\n\n{SHOWS_URL}"
             )
 
             NOTIFIED_FILE.write_text("sent", encoding="utf-8")
             logging.info("Notification sent successfully.")
         else:
-            logging.info("No Brazilian show found.")
+            logging.info("No Brazilian popup found.")
 
     except (
         requests.RequestException,
